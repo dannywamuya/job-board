@@ -13,20 +13,26 @@ $(document).ready(function () {
         // alert(jobdetails);
 
 
-        //shows various cards of category;
+        //shows various cards of category.
+        //showing  Client's details of work.
         if (category === "Electrician") {
             $("#cards1").show();
-            $("#jobmessage").append();
+            $("#jobmessage1").append(jobdetails);
         } else if (category === "Carpenter") {
             $("#cards2").show();
+            $("#jobmessage2").append(jobdetails);
         } else if (category === "Content creator") {
             $("#cards3").show();
+            $("#jobmessage3").append(jobdetails);
         } else if (category === "Plumber") {
             $("#cards4").show();
+            $("#jobmessage4").append(jobdetails);
         } else if (category === "Teacher") {
             $("#cards5").show();
+            $("#jobmessage5").append(jobdetails);
         } else if (category === "Other") {
             $("#cards6").show();
+            $("#jobmessage6").append(jobdetails);
         } else {
             alert("Choose a category!");
         }
