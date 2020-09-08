@@ -12,9 +12,23 @@ $(document).ready(function () {
         // alert(category);
         // alert(jobdetails);
 
+
+        //shows various cards of category;
         if (category === "Electrician") {
             $("#cards1").show();
-            // $("#jobmessage").append();
+            $("#jobmessage").append();
+        } else if (category === "Carpenter") {
+            $("#cards2").show();
+        } else if (category === "Content creator") {
+            $("#cards3").show();
+        } else if (category === "Plumber") {
+            $("#cards4").show();
+        } else if (category === "Teacher") {
+            $("#cards5").show();
+        } else if (category === "Other") {
+            $("#cards6").show();
+        } else {
+            alert("Choose a category!");
         }
     });
 });
