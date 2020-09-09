@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workers</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link href="../css/worker.css" rel="stylesheet" type="text/css">
+    <script src="../js/jquery-3.5.1.js"></script>
+    <script src="../js/worker.js"></script>
+
+    <body>
+        <div class="container-fluid">
+            <div id="w-head">
+                <h1>Workers</h1>
+            </div>
+            <div id="w-filter">
+                <label for="filter">Choose Category</label>
+                <select class="form-control" name="filter" id="category" onchange="filterSelection(value)">
+                <option value="all" selected>All Workers</option>
+                <option value="electrician">Electrician</option>
+                <option value="plumber">Plumber</option>
+                <option value="carpenter">Carpenter</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="jumbotron" id="w-container">
+                <div class="filterDiv electrician show" id="w-card">elect</div>
+                <div class="filterDiv electrician carpenter show" id="w-card">elect car</div>
+                <div class="filterDiv electrician show" id="w-card">elect</div>
+                <div class="filterDiv electrician show" id="w-card">elect</div>
+                <div class="filterDiv electrician show" id="w-card">elect</div>
+                <div class="filterDiv plumber show" id="w-card">plu</div>
+                <div class="filterDiv plumber show" id="w-card">plu</div>
+                <div class="filterDiv plumber show" id="w-card">plu</div>
+                <div class="filterDiv carpenter show" id="w-card">car</div>
+                <div class="filterDiv carpenter show" id="w-card">car</div>
+                <div class="filterDiv carpenter show" id="w-card">car</div>
+            </div>
+        </div>
+    </body>
+
+</html>
