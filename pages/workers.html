@@ -15,8 +15,27 @@
             <div id="w-head">
                 <h1>Workers</h1>
             </div>
+            <div id="w-filter">
+                <label for="filter">Choose Category</label>
+                <select class="form-control" name="filter" id="category" onchange="filterSelection(value)">
+                <option value="electrician">Electrician</option>
+                <option value="plumber">Plumber</option>
+                <option value="carpenter">Carpenter</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
             <div class="jumbotron" id="w-container">
-
+                <div class="filterDiv electrician" id="w-card">elect</div>
+                <div class="filterDiv electrician carpenter" id="w-card">elect car</div>
+                <div class="filterDiv electrician" id="w-card">elect</div>
+                <div class="filterDiv electrician" id="w-card">elect</div>
+                <div class="filterDiv electrician" id="w-card">elect</div>
+                <div class="filterDiv plumber" id="w-card">plu</div>
+                <div class="filterDiv plumber" id="w-card">plu</div>
+                <div class="filterDiv plumber" id="w-card">plu</div>
+                <div class="filterDiv carpenter" id="w-card">car</div>
+                <div class="filterDiv carpenter" id="w-card">car</div>
+                <div class="filterDiv carpenter" id="w-card">car</div>
             </div>
         </div>
     </body>
