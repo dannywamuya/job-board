@@ -1,16 +1,7 @@
-/*{
-    box-sizing: border-box;
+*{
+    scroll-behavior: smooth;
 }
 
-html,body{
-    height: 100%;
-    font-family: sans-serif;
-    color:white;
-    background-color: rgb(19, 18, 18);
-    padding: 0;
-    margin: 0;
-    font-size: x-large;
-}*/
 .socials a{
     border: 1px solid  rgb(206, 204, 203);
     width:45px;
@@ -20,7 +11,6 @@ html,body{
     text-align: center;
     display: inline-block;
     font-size: 1.3em;
-    font-family: 'Vollkorn', serif;
     border-radius: 10em;
     transition: all .3s;
 }
@@ -28,4 +18,13 @@ html,body{
     border: 1px solid  rgb(4, 127, 243);
     color:white;
     transition: all .3s;
+}
+.footer-nav a{
+    color:white;
+    letter-spacing: 0.1ch;
+    text-decoration: none;
+    margin-inline-start: 2em ;
+}
+.footer-nav a:hover{
+    color:rgb(36, 120, 230);
 }
