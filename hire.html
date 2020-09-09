@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Job Board</title>
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">-->
+</head>
+<body>
+  <!--NavigationBar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand">Job Board</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto" id="nav-left">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Jobs
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Hire</a>
+            <a class="dropdown-item" href="#">Get Job</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!--NavigationBar-->
+  <h1>Hiring page</h1>
+  <p>At <strong>Job Board</strong>, we are determined to decerease the rate of employment among the youth and increase their productivity in the society. We aim to connect qualified candidates with potetial employers by having such a platform where one can send their details and receive a notification when there's a job opening that might suit them.<br>
+   Want to link up with a potential employer soon?<br>
+   Register now and stand a chance to land your dearm job by <strong>Filling the form below..</strong></p>
+    <div class="container-fluid application">
+      <div class="application-overlay">
+        <div class="title" style="text-align: center; font-size: xx-large; font-weight: bolder;">Application Form</div>
+        <form>
+           <div class="intro" style="text-align: center;">
+              <label for="First_Name"><b>First name * </b><br>
+              <input name="First_Name" type="text" maxlength="60" style="max-width: 350px"></label>
+              <label for="Last_Name"><b>Last name * </b><br>
+              <input name="Last_Name" type="text" maxlength="60" style="max-width: 350px"></label>  
+           </div>
+           <div class="contacts" style="text-align: center;">
+            <label for="Email_Address"><b>Email *</b></br>
+            <input name="Email_Address" type="text" maxlength="100" style="max-width: 535px"></label>
+            <label for="Phone"><b>Phone *</b></br>
+            <input name="Phone" type="text" maxlength="50" style="max-width: 260px"></label>
+           </div> 
+           <div class="additional" style="text-align: center;">
+            <label for="Portfolio"><b>Portfolio website</b></br>
+            <input name="Portfolio" type="text" maxlength="255" value="http://" style="max-width: 535px"></label>
+           </div>  
+           <div class="profession" style="text-align: center;">
+            <label for="Position"><b>Profession/ Position you are applying for *</b></br>
+            <input name="Position" type="text" maxlength="100" style="max-width: 535px"></label>
+           </div>
+           <div class="personal" style="text-align: center;">
+              <label for="Salary"><b>Salary requirements</b></br>
+              <input name="Salary" type="text" maxlength="50" style="max-width: 260px"></label>
+              <label for="StartDate"><b>When can you start?</b></br>
+              <input name="StartDate" type="text" maxlength="50" style="max-width: 260px"></label>
+           </div>
+           <div class="radio" style="text-align: center;">
+            <label for="Relocate"><b>Are you willing to relocate?</b></br>
+            <input name="Relocate" type="radio" value="Yes" checked="checked"> Yes      
+            <input name="Relocate" type="radio" value="No"> No      
+            <input name="Relocate" type="radio" value="NotSure"> Not sure
+           </div>
+           <div class="history" style="text-align: center;">
+            <label for="Organization"><b>Last company you worked for</b></br>
+            <input name="Organization" type="text" maxlength="100" style="max-width: 535px"></label>
+           </div>
+           <div class="comment" style="text-align: center;">
+            <label for="Reference"><b>Reference / Comments / Questions</b></label><br/>
+            <textarea name="Reference" rows="4" cols="30" style="max-width: 535px"></textarea>
+           </div>
+           <div class="bitton" style="text-align: center;">
+            <input name="skip_submit" type="submit" value="Send Application">
+           </div>
+        </form>
+      </div>
+    </div>
+  <footer>
+    <div class="card text-center bg-dark text-white">
+      <div class="card-header">
+        Contact Us!
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer text-muted">
+        Copyright © 2020 | Job Board
+      </div>
+    </div>
+  </footer>
+  <!--footer-->
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
+  </body>
+  </html>
