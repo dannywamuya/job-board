@@ -1,13 +1,28 @@
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #w-head {
     position: absolute;
-    width: 146px;
-    height: 151px;
-    left: 647px;
-    top: 49px;
+    width: max-content;
+    height: max-content;
+    top: 50px;
     font-family: Saira ExtraCondensed;
     font-style: normal;
     font-weight: normal;
     font-size: 96px;
     line-height: 151px;
     color: #000000;
+}
+
+#w-container {
+    position: absolute;
+    width: 90%;
+    max-width: 99%;
+    height: 800px;
+    top: 200px;
+    background: #F1F1F1;
+    border-radius: 8px;
 }
