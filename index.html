@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <title>Job Board</title>
   <!--font awesome-->
@@ -24,21 +23,22 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto" id="nav-left">
-        <li class="nav-item active">
-          <a class="nav-link" href="#about">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#about">About Us</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Jobs
-          </a>
+          aria-haspopup="true" aria-expanded="false">Jobs</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Hire</a>
             <a class="dropdown-item" href="#">Get Job</a>
           </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/terms.html">Terms of Use</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -48,7 +48,7 @@
     </div>
   </nav>
   <!--NavigationBar-->
-  <div class="jumbotron row card-deck">
+  <div class="jumbotron row card-deck" id="job-section">
     <div class="card col text-center" style="width: 10rem;">
       <img src="https://i.imgur.com/tcemZ21.jpg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -69,6 +69,7 @@
       </div>
     </div>
   </div>
+  <!--about us-->
   <div class="discription text-center container pb-5 pt-2" id="about">
     <h1 class="pb-4">About Us</h1>
     <h2>Our mission is simple: to help the world Love Mondays.</h2>
@@ -124,16 +125,11 @@
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="https://goo.gl/maps/YxKT96fH4FGBKjoA9"><i class="fab fas fa-map-marker-alt"></i></a>
       </div>
-      <div class="footer-nav pd-2">
-        <a href="index.html">
-        <button type="button" class="btn btn-outline-success my-2 my-sm-0" >Home<i class="fas fa-home ml-2" aria-hidden="true"></i> </button></a>
-        <a href="#about">
-        <button type="button"class="btn btn-outline-success my-2 my-sm-0">About Us<i class="fas fa-info-circle ml-2" aria-hidden="true"></i></button></a>
-        <a href="#">
-        <button type="button"class="btn btn-outline-success my-2 my-sm-0">Jobs<i class="fas fa-briefcase ml-2" aria-hidden="true"></i></button></a>
-      </div>
       <div class="card-footer text-muted">
-        Copyright © 2020 | Job Board
+        <a href="index.html">Home</a> |
+        <a href="#about">About Us</a> |
+        <a href="#job-section">Jobs</a> |
+        <a href="pages/terms.html">Terms of Use</a> | Copyright © 2020 Job Board
       </div>
     </div>
   </footer>
