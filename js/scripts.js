@@ -1,28 +1,81 @@
+function findwork() {
+    var client = [
+        {
+            ClientName: $("#client-name").val(),
+            Clientemail: $("#client-email").val(),
+            Cientcategory: $("#client-category").val(),
+            Clientdetails: $("#client-details").val(),
+        }
+    ]
+    let client_string = JSON.stringify(client)
+    localStorage.setItem("clients", client_string);
+    let client_object = JSON.parse(localStorage.getItem("clients"));
+    var output = '';
+    for (var i = 0; i < client_object.length; i++) {
+        // console.log(people[i].name)
+        output += '<li>' + client[i].Clientname + ": " + client[i].Clientdetails + '</li>';
+    }
+    document.getElementById('preview').innerHTML = output;
+    console.log(client_object);
 
-$(document).ready(function () {
-    $("button.findworker").click(function (event) {
-        event.preventDefault();//prevents erasing of info after submitting
-        let name = $("#name").val();//gets name input from user
-        let email = $("#email").val(); //gets email input from user
-        let category = $("#category").val(); //gets category input from user
-        let jobdetails = $("#jobdetails").val(); //gets message input from user
+}
+alert(findwork());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $(document).ready(function () {
+    // $("button.findworker").click(function (event) {
+    //     event.preventDefault();//prevents erasing of info after submitting
+    //     let name = $("#name").val();//gets name input from user
+    //     let email = $("#email").val(); //gets email input from user
+    //     let category = $("#category").val(); //gets category input from user
+    //     let jobdetails = $("#jobdetails").val(); //gets message input from user
 
         //confirms values have been retrieved for manipulation
         // alert(name);
         // alert(email);
         // alert(category);
         // alert(jobdetails);
-        var client = ["name", "email", "category", "jobdetails"];
-        alert(client)
+        // var client = ["name", "email", "category", "jobdetails"];
+        // alert(client)
 
-        $("button.findjob").click(function (event) {
-            event.preventDefault();//prevents erasing of info after submitting
-            let workername = $("#workername").val();//gets name input from user
-            let workeremail = $("#workeremail").val(); //gets email input from user
-            let workercategory = $("#workercategory").val(); //gets category input from user
-            let workerjobdetails = $("#workerjobdetails").val(); //gets message input from user
+        // $("button.findjob").click(function (event) {
+        //     event.preventDefault();//prevents erasing of info after submitting
+        //     let workername = $("#workername").val();//gets name input from user
+        //     let workeremail = $("#workeremail").val(); //gets email input from user
+        //     let workercategory = $("#workercategory").val(); //gets category input from user
+        //     let workerjobdetails = $("#workerjobdetails").val(); //gets message input from user
 
-            var worker = ["workername", "workeremail", "workercategory", "workerjobdetails"];
+        //     var worker = ["workername", "workeremail", "workercategory", "workerjobdetails"];
 
             //confirms values have been retrieved for manipulation
             // alert(name);
@@ -73,9 +126,9 @@ $(document).ready(function () {
             // } else {
             //     alert("Choose a category!");
             // }
-        });
-    });
-});
+        // );
+    // });
+// });}
 
 
 
