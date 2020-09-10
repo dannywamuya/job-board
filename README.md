@@ -1,9 +1,9 @@
 # Job Board
 
-Is a web app that allows for users to get services from professionals.
+Is a web app that allows users to get services from professionals.
 
 ## Screenshot
-![Capture Job Board](https://user-images.githubusercontent.com/68597043/92716175-512c3000-f313-11ea-8cfa-f2607c06d5c8.PNG)
+![Capture job](https://user-images.githubusercontent.com/68597043/92742875-e4299200-f334-11ea-8165-8a094a7f3466.PNG)
 
 ## Live link
 
