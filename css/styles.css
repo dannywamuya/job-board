@@ -20,3 +20,32 @@
     background-size: cover;
     background-position: center;
 } */
+*{
+    scroll-behavior: smooth;
+}
+.socials a{
+    border: 1px solid  rgb(206, 204, 203);
+    width:45px;
+    height: 41px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 10em;
+    transition: all .3s;
+}
+.socials a:hover{
+    border: 1px solid  rgb(4, 127, 243);
+    color:white;
+    transition: all .3s;
+}
+.footer-nav a{
+    color:white;
+    letter-spacing: 0.1ch;
+    text-decoration: none;
+    margin-inline-start: 2em ;
+}
+.footer-nav a:hover{
+    color:rgb(36, 120, 230);
+}
