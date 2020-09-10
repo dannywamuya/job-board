@@ -3,39 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSS only -->
+  <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <title>Job Board</title>
-  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">-->
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 </head>
 <body>
   <!--NavigationBar-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand">Job Board</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    <button class="navbar-toggler" type="button"   data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto" id="nav-left">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#about">About Us</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Jobs
-          </a>
+          aria-haspopup="true" aria-expanded="false">Jobs</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Hire</a>
             <a class="dropdown-item" href="#">Get Job</a>
           </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/terms.html">Terms of Use</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -45,10 +49,6 @@
     </div>
   </nav>
   <!--NavigationBar-->
-  <!-- <div class="img-wrap">
-    <img src="./images/night.jpg"height="600px" width="100%">
-    <div class="content-wrap">We only have what we give. If you’re in the luckiest one per cent of humanity, you owe it to the rest of humanity to think about the other 99 per cent.<br>Doing nothing for other is the undoing of ourselves.</div>
-</div>    -->
 <div class="container-work">
     <h2>Looking for a job..?</h2>
     <p>Here's a list of the latest job vaccancies that might be just for you.<br><strong>Try your luck..!</strong></p>
@@ -245,31 +245,46 @@
       </div>
     </div>
 <!--footer-->
-  <footer>
-    <div class="card text-center bg-dark text-white">
-      <div class="card-header">
-        Contact Us!
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      </div>
-      <div class="card-footer text-muted">
-        Copyright © 2020 | Job Board
-      </div>
+ <!--footer-->
+ <footer>
+  <div class="card text-center bg-dark text-white">
+    <div class="card-header">
+      <h2>Contact Us!</h2>
     </div>
-  </footer>
-  <!--footer-->
-  <!-- JS, Popper.js, and jQuery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
-  </body>
-  </html>
+    <div class="card-body">
+      <h5 class="card-title">Thank You for visiting our site</h5>
+      <p class="card-text"><b>Job Boar</b> is a web app that allows users to get services from professionals.</p>
+    </div>
+    <div class="contact pt-2 pb-2">
+      <span><i class="fas fa-phone"></i><a href="205-201-490">205-201-490</a>&nbsp; </span>
+      <span><i class="fas fa-envelope"></i><a href="info@jobboard.com">info@jobboard.com</a> &nbsp;</span>
+    </div>
+    <div class="socials pb-2">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="https://goo.gl/maps/YxKT96fH4FGBKjoA9"><i class="fab fas fa-map-marker-alt"></i></a>
+    </div>
+    <div class="card-footer text-muted">
+      <a class="text-muted" href="index.html">Home</a> |
+      <a class="text-muted" href="#about">About Us</a> |
+      <a class="text-muted" href="#job-section">Jobs</a> |
+      <a class="text-muted" href="pages/terms.html">Terms of Use</a> |
+      <a class="text-muted" href="#">Contact Us</a>| Copyright © 2020 Job Board
+    </div>
+  </div>
+</footer>
+<!--footer-->
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
+</body>
+</html>
