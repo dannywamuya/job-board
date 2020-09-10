@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Job Board</title>
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">-->
+</head>
+<body>
+  <!--NavigationBar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand">Job Board</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto" id="nav-left">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Jobs
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Hire</a>
+            <a class="dropdown-item" href="#">Get Job</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!--NavigationBar-->
+    
+<div class="container-work">
+    <h2>Looking for a job..?</h2>
+    <p>Here's a list of the latest job vaccancies that might be just for you.<br><strong>Try your luck..!</strong></p>
+    <div class="card-columns">
+      <div class="card bg-light">
+        <div class="card-body text-center">
+          <div class="card-text">
+            <div class="info" onclick="pop()">
+              <p><strong>Proffession: </strong> Graphic Designer</p>
+              <p><strong>Company: </strong> Tech Theory</p>
+              <p><strong>Positions:</strong> 1</p>
+              <p><strong>Conditions: </strong> Permanent</p>
+              <p><strong>Contact: </strong> Email: techtheroy@yahoo.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-light">
+        <div class="card-body text-center">
+          <div class="card-text">
+            <div class="info" onclick="pop()">
+              <p><strong>Proffession: </strong> Dj</p>
+              <p><strong>Company: </strong> Club Arizona</p>
+              <p><strong>Positions:</strong> 1</p>
+              <p><strong>Conditions: </strong> Temporal</p>
+              <p><strong>Contact: </strong> Email: arizonaclub@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card bg-light">
+        <div class="card-body text-center">
+          <div class="card-text">
+            <div class="info" onclick="pop()">
+              <p><strong>Proffession: </strong> Driver</p>
+              <p><strong>Company: </strong> Truckers Kenya</p>
+              <p><strong>Positions:</strong> 3</p>
+              <p><strong>Conditions: </strong> Permanent</p>
+              <p><strong>Contact: </strong> Email: info@trackerskenya.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-light">
+        <div class="card-body text-center">
+          <div class="card-text">
+            <div class="info" onclick="pop()">
+              <p><strong>Proffession: </strong>Host </p>
+              <p><strong>Company: </strong> Bahati Caters</p>
+              <p><strong>Positions:</strong> 1</p>
+              <p><strong>Conditions: </strong> Temporal</p>
+              <p><strong>Contact: </strong> Email: bahaticaters@gmail.com.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-light">
+        <div class="card-body text-center">
+          <div class="card-text">
+            <div class="info" onclick="pop()">
+              <p><strong>Proffession: </strong> Barista</p>
+              <p><strong>Company: </strong> Ivy's Cafe</p>
+              <p><strong>Positions:</strong> 1</p>
+              <p><strong>Conditions: </strong> Permanent</p>
+              <p><strong>Contact: </strong> Email: ivyscafe.ic@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-light">
+        <div class="card-body text-center">
+          <div class="card-text">
+            <div class="info" onclick="pop()">
+              <p><strong>Proffession: </strong> Mechanic</p>
+              <p><strong>Company: </strong> Romi Autos</p>
+              <p><strong>Positions:</strong> 5</p>
+              <p><strong>Conditions: </strong> Permanent</p>
+              <p><strong>Contact: </strong> Email: romiautos@yahoo.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-light">
+        <div class="card-body text-center">
+          <div class="card-text">
+            <div class="info" onclick="pop()">
+              <p><strong>Proffession: </strong> Chef</p>
+              <p><strong>Company: </strong> Moran Resurant</p>
+              <p><strong>Positions:</strong> 3</p>
+              <p><strong>Conditions: </strong> Permanent</p>
+              <p><strong>Contact: </strong> Email: moranresturant@gamil.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-light">
+        <div class="card-body text-center">
+          <div class="card-text">
+            <div class="info" onclick="pop()">
+              <p><strong>Proffession: </strong> Plumber</p>
+              <p><strong>Company: </strong> Jiji Waters</p>
+              <p><strong>Positions:</strong> 10</p>
+              <p><strong>Conditions: </strong> Permanent</p>
+              <p><strong>Contact: </strong> Email: jijiwaters@yahoo.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-light">
+        <div class="card-body text-center">
+          <div class="card-text">
+            <div class="info" onclick="pop()">
+              <p><strong>Proffession: </strong> Masaon</p>
+              <p><strong>Company: </strong> Nyumbani Homes</p>
+              <p><strong>Positions:</strong> 100</p>
+              <p><strong>Conditions: </strong> Contract</p>
+              <p><strong>Contact: </strong> Email: nyumbanihomes@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-light">
+        <div class="card-body text-center">
+          <div class="card-text">
+            <div class="info" onclick="pop()">
+              <p><strong>Proffession: </strong> Teacher</p>
+              <p><strong>Company: </strong> Heights Academy</p>
+              <p><strong>Positions:</strong> 4</p>
+              <p><strong>Conditions: </strong> Permanent</p>
+              <p><strong>Contact: </strong> Email: heightsacademy@yahoo.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-light">
+        <div class="card-body text-center">
+          <div class="card-text">
+            <div class="info" onclick="pop()">
+              <p><strong>Proffession: </strong> Graphic Designer</p>
+              <p><strong>Company: </strong> Tech Theory</p>
+              <p><strong>Positions:</strong> 1</p>
+              <p><strong>Conditions: </strong> Permanent</p>
+              <p><strong>Contact: </strong> Email: techtheroy@yahoo.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-light">
+        <div class="card-body text-center">
+          <div class="card-text">
+            <div class="info" onclick="pop()">
+              <p><strong>Proffession: </strong> Electrician</p>
+              <p><strong>Company: </strong> Jenga Power Company</p>
+              <p><strong>Positions:</strong> 20</p>
+              <p><strong>Conditions: </strong> Permanent</p>
+              <p><strong>Contact: </strong> Email: info@jengapower@yahoo.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+         <!--post a job-->
+      <div class="job-wrapper">
+        <div class="job-form">
+          <div class="title">
+            <h3>Post a job</h3>
+          </div>
+          <form>
+            <div class="vaccancy">
+              <label for="Name/Company name"><b>Name/Company name: </b><br>
+              <input name="Name" type="text"></label>
+              <label for="Email"><b>Email Address:</b><br>
+              <input name="Email-Address" type="text"></label>
+           </div>
+           <div class="job-decsription">
+            <label for="Description"><b>Jod Description:</b></label><br/>
+            <textarea name="Reference" rows="4" cols="30" style="max-width: 535px"></textarea>
+           </div>
+             <div class="button" style="text-align: center;">
+              <input name="skip_submit" type="submit" value="POST">
+             </div>
+          </form>
+        </div>
+      </div>
+    </div>
+<!--footer-->
+  <footer>
+    <div class="card text-center bg-dark text-white">
+      <div class="card-header">
+        Contact Us!
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer text-muted">
+        Copyright © 2020 | Job Board
+      </div>
+    </div>
+  </footer>
+  <!--footer-->
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
+  </body>
+  </html>
