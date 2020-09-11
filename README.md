@@ -38,4 +38,4 @@ corporate perspectives.
 
 ## Copyright And License
 MIT License <br>
-Copyright © 2020|Job Board
+Copyright © 2020 | Job Board
