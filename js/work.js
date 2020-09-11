@@ -78,10 +78,13 @@ function createDiv(src, cat, nme, category) {
     el.classList.add("show");
     el.id = "w-card";
     container.appendChild(el);
+    var dImage = document.createElement("div");
+    dImage.className = "imageDiv";
+    el.appendChild(dImage);
     var img = document.createElement("IMG");
     img.setAttribute("src", src);
     img.className = "card-img-top";
-    el.appendChild(img);
+    dImage.appendChild(img);
     var cBody = document.createElement("div");
     cBody.className = "card-body";
     el.appendChild(cBody);
