@@ -37,5 +37,5 @@ corporate perspectives.
 **Brain Weloba**
 
 ## Copyright And License
-MIT License <br>
-Copyright © 2020 | Job Board
+[MIT License](https://github.com/dannywamuya/job-board/blob/master/LICENSE)<br>
+Copyright © 2020|Job Board
