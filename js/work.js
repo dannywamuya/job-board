@@ -67,6 +67,7 @@ function register () {
         var textnode = document.createTextNode(text);
         node.appendChild(textnode);
         document.getElementById("preview").appendChild(node);
+    }
 }
 
 //method to create new div
