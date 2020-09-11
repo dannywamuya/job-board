@@ -5,10 +5,7 @@
 Is a web app that allows for users to get services from professionals.
 
 ## Screenshot
-![alt screenshot](img/screenshot.png)
-
-
-## Live link
+![alt screenshot](images/screenshot.png)
 
 
 ## Figma link
@@ -24,7 +21,7 @@ to prepare candidates for the open jobs and workplace. **Job Board** is a career
 to solve human resources and education needs in Kenya; hence, increasing profitability from both personal and
 corporate perspectives.
 
-## Technologies
+## Technoloies
 
 * HTML5
 * CSS
@@ -35,7 +32,7 @@ corporate perspectives.
 **Danny Wamuya** <br>
 **Clifford Ochieng Odondo** <br>
 **Rustique Uwimpaye** <br>
-**Bratipah Kioko** <br>
+**Bratipah Kioko Hammy** <br>
 **Agnes Muturi** <br>
 **Brain Weloba**
 
