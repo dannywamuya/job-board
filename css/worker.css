@@ -1,0 +1,74 @@
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#w-head {
+    position: relative;
+    width: max-content;
+    height: max-content;
+    top: 50px;
+    font-family: Saira ExtraCondensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 151px;
+    color: #000000;
+}
+
+#w-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    max-width: 99%;
+    height: max-content;
+    top: 200px;
+    background: #F1F1F1;
+    border-radius: 8px;
+}
+
+#w-card {
+    margin: 20px;
+    position: relative;
+    width: max-content;
+    height: maxcontent;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+#w-filter {
+    position: relative;
+    top: 130px;
+}
+
+
+/* merge this part only */
+
+.filterDiv {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.imageDiv {
+    width: 180px;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+img.imageDiv {
+    width: 180px;
+    overflow: hidden;
+}
+
+#category {
+    width: 200px;
+}

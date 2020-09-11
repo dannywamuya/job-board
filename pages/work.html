@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/work.css">
+    <link rel="stylesheet" href="../css/worker.css">
+    <title>Job Board</title>
+
+</head>
+
+<body>
+    <!--NavigationBar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand">Job Board</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" id="nav-left">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#about">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Jobs
+            </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                        <a class="dropdown-item" href="hire-page.html">Hire</a>
+                        <a class="dropdown-item" href="work.html">Get Job</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container-work container-fluid">
+        <h2>Looking for a job..?</h2>
+        <p>Here's a list of the latest job vaccancies that might be just for you.<br><strong>Try your luck..!</strong></p>
+    </div>
+    <!--New Form by Danny-->
+    <div class="container-fluid client">
+        <div class="col-md-6 mt-5 container-fluid">
+            <form class="register">
+                <label for="form-group"><h5>Register</h5></label>
+                <div class="form-group" id="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name" required>
+                </div>
+                <!-- <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                </div> -->
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select class="form-control" id="category" required>
+                        <option>Select work's Category</option>
+                        <option>Electrician</option>
+                        <option>Carpenter</option>
+                        <option>Content Creator</option>
+                        <option>Plumber</option>
+                        <option>Teacher</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <!-- <div class="form-group">
+                    <label for="jobdetails">Enter Job details</label>
+                    <textarea class="form-control" id="jobdetails" placeholder="Work's details" rows="5"></textarea>
+                </div> -->
+
+                <button type="submit" class="btn btn-primary register" onclick="register()">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="col-md-6" id="cardcont">
+
+    </div>
+    </div>
+
+    <div class="container-fluid">
+        <!-- <div id="w-head">
+                <h1>Workers</h1>
+            </div> -->
+
+        <div id="w-filter" class="container-fluid">
+            <label for="filter">Filter Category</label>
+
+            <select class="form-control" name="filter" id="category" onchange="filterSelection(value)">
+                <option value="all" selected>All Workers</option>
+                <option value="electrician">Electrician</option>
+                <option value="content">Content Creator</option>
+                <option value="teacher">Teacher</option>
+                <option value="plumber">Plumber</option>
+                <option value="carpenter">Carpenter</option>
+                <option value="other">Other</option>
+                </select>
+        </div>
+        <div class="jumbotron" id="w-container" style="margin-bottom: 200px;">
+            <!-- <div class="filterDiv electrician show" id="w-card">elect</div>
+                <div class="filterDiv electrician carpenter show" id="w-card">elect car</div>
+                <div class="filterDiv electrician show" id="w-card">elect</div>
+                <div class="filterDiv electrician show" id="w-card">elect</div>
+                <div class="filterDiv electrician show" id="w-card">elect</div>
+                <div class="filterDiv plumber show" id="w-card">plu</div>
+                <div class="filterDiv plumber show" id="w-card">plu</div>
+                <div class="filterDiv plumber show" id="w-card">plu</div>
+                <div class="filterDiv carpenter show" id="w-card">car</div>
+                <div class="filterDiv carpenter show" id="w-card">car</div>
+                <div class="filterDiv carpenter show" id="w-card">car</div> -->
+        </div>
+    </div>
+
+
+    <!-- <div class="container-fluid preview" style="position: relative;">
+            <h5>Local Storage Data</h5>
+            <div id="myList">
+                <ul id="preview">
+
+                </ul>
+            </div>
+        </div> -->
+
+
+    <!--End Danny Form-->
+
+    <!-- <div class="card-columns">
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <div class="card-text">
+                    <div class="info" onclick="pop()">
+                        <p><strong>Proffession: </strong> Graphic Designer</p>
+                        <p><strong>Company: </strong> Tech Theory</p>
+                        <p><strong>Positions:</strong> 1</p>
+                        <p><strong>Conditions: </strong> Permanent</p>
+                        <p><strong>Contact: </strong> Email: techtheroy@yahoo.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+   
+    <!--<div class="preview">
+        <h5>Our Registered Workers</h5>
+        <div id="myList">
+            <a href=""><ul id="preview"></ul></a>
+        </div>
+    </div>-->
+
+    <!--footer-->
+    <div>
+        <footer>
+            <div class="card text-center bg-dark text-white">
+                <div class="card-header">
+                    Contact Us!
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer text-muted">
+                    Copyright © 2020 | Job Board
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!--footer-->
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
+    <script src="../js/work.js"></script>
+</body>
+
+</html>
