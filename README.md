@@ -26,6 +26,8 @@ corporate perspectives.
 * HTML5
 * CSS
 * JavaScript
+* Jquery
+* JSON 
 
 ## Authors
 
