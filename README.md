@@ -30,7 +30,7 @@ corporate perspectives.
 
 ## Authors
 
-**Danny Wamuya** <br>
+**Daniel Wamuya** <br>
 **Clifford Ochieng Odondo** <br>
 **Rustique Uwimpaye** <br>
 **Bratipah Kioko Hammy** <br>
