@@ -21,7 +21,7 @@ to prepare candidates for the open jobs and workplace. **Job Board** is a career
 to solve human resources and education needs in Kenya; hence, increasing profitability from both personal and
 corporate perspectives.
 
-## Technoloies
+## Technologies
 
 * HTML5
 * CSS
