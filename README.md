@@ -32,7 +32,7 @@ corporate perspectives.
 **Danny Wamuya** <br>
 **Clifford Ochieng Odondo** <br>
 **Rustique Uwimpaye** <br>
-**Bratipah Kioko Hammy** <br>
+**Bratipah Kioko** <br>
 **Agnes Muturi** <br>
 **Brain Weloba**
 
