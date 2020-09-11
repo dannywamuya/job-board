@@ -69,7 +69,6 @@ function register() {
 
 //method to create new div
 function createDiv(src, cat, nme, category) {
-    debugger;
     var container = document.getElementById("w-container");
     var el = document.createElement("div");
     el.className = "jumbotron";
