@@ -34,37 +34,39 @@ $(document).ready(function() {
 });
 
 
-
-function register() {
-    var workers = [{
+function register () {
+    // console.log(localStorage.getItem("workers"))
+    var workers = [
+    {
         workerName: $("#name").val(),
-        workerJob: $("#category").val()
-    }];
-
-    let workers_serialized = JSON.stringify(workers);
-
-
-    localStorage.setItem("workers", workers_serialized);
-
-    let workers_deserialized = JSON.parse(localStorage.getItem("workers"));
-
-    for (var i = 0; i < workers_deserialized.length; i++) {
-        var output = '';
-        output = workers[i].workerName + ":" + workers[i].workerJob;
-        myFunction(output);
+        workerJob:  $("#category").val()
     }
+    ];
 
-    // document.getElementById('preview').innerHTML = output;
+    let workers_serialized = JSON.stringify(workers); //turn workers to JSON string
+    var oldWorkers = localStorage.getItem("workers"); //new variable stores the workers JSON string
 
-    console.log(workers_deserialized);
+    if (oldWorkers == null ){
+        localStorage.setItem("workers", workers_serialized);
+    } else {
+        var combinedWorkers = oldWorkers.concat(workers_serialized);
+        localStorage.setItem("workers", combinedWorkers);
+    }  
+    
+    // let workers_deserialized = JSON.parse(localStorage.getItem("workers"));
+
+    for (var i = 0; i < localStorage.getItem("workers").length; i++) {
+    output = workers[i].workerName + ": " + workers[i].workerJob;
+    myFunction(output);
+    };
+
+    console.log(localStorage.getItem("workers"));
 
     function myFunction(text) {
         var node = document.createElement("LI");
         var textnode = document.createTextNode(text);
         node.appendChild(textnode);
         document.getElementById("preview").appendChild(node);
-    }
-
 }
 
 //method to create new div
