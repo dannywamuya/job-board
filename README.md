@@ -7,7 +7,7 @@ Is a web app that allows for users to get services from professionals.
 
 
 ## Live link
-
+https://dannywamuya.github.io/job-board/
 
 ## Figma link
 
