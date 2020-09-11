@@ -33,6 +33,7 @@ $(document).ready(function() {
     });
 });
 
+
 function register () {
     // console.log(localStorage.getItem("workers"))
     var workers = [
@@ -61,17 +62,13 @@ function register () {
 
     console.log(localStorage.getItem("workers"));
 
-
     function myFunction(text) {
         var node = document.createElement("LI");
         var textnode = document.createTextNode(text);
         node.appendChild(textnode);
         document.getElementById("preview").appendChild(node);
     }
-
-};
-
-
+}
 
 //method to create new div
 function createDiv(src, cat, nme, category) {
@@ -84,10 +81,13 @@ function createDiv(src, cat, nme, category) {
     el.classList.add("show");
     el.id = "w-card";
     container.appendChild(el);
+    var dImage = document.createElement("div");
+    dImage.className = "imageDiv";
+    el.appendChild(dImage);
     var img = document.createElement("IMG");
     img.setAttribute("src", src);
     img.className = "card-img-top";
-    el.appendChild(img);
+    dImage.appendChild(img);
     var cBody = document.createElement("div");
     cBody.className = "card-body";
     el.appendChild(cBody);
@@ -145,3 +145,4 @@ function RemoveClass(element, name) {
     }
     element.className = arr1.join(" ");
 }
+
